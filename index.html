@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container"><br>
+        <div class="con-1">
+            <button onclick="document.getElementById('mol').style.display='block'">menu</button>
+        </div>
+        <div class="con-2">
+            <button onclick="document.getElementById('mol2').style.display='block'">contact</button>
+        </div>
+        <h1 class="logo">logo</h1>
+        <div class="txt-1">monday - friday 10-23 | saturday 14-02</div>
+        <div class="txt-2">42 village St, New York</div>
+        <div class="txt-3">powered by <a href="#">uche</a></div>
+    </div>
+    <div class="modal" id="mol">
+        <div class="modal-content animate">
+            <div class="div-1">
+                <h1>Starters</h1>
+                <span title="close menu" onclick="document.getElementById('mol').style.display='none'">X</span>
+            </div>
+            <div class="div-2">
+                <p>Tomato Soup <span>$2.50</span></p>
+                <p>Chicken Salad <span>$3.50</span></p>
+                <p>Bread and Butter <span>$1.00</span></p>
+            </div>
+            <div class="div-3">
+                <h1>Main Courses</h1>
+            </div>
+            <div class="div-2">
+                <p>Grilled Fish and Potatoes <span>$8.50</span></p>
+                <p>Italian Pizza <span>$5.50</span></p>
+                <p>Veggie Pasta <span>$4.00</span></p>
+                <p>Chicken and Potatoes <span>$6.50</span></p>
+                <p>Deluxe Burger <span>$5.00</span></p>
+            </div>
+            <div class="div-3">
+                <h1>Desserts</h1>
+            </div>
+            <div class="div-2">
+                <p>Fruit Salad <span>$2.50</span></p>
+                <p>Ice cream <span>$2.00</span></p>
+                <p>Chocolate Cake <span>$4.00</span></p>
+                <p>Cheese <span>$5.50</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="mol2">
+        <div class="contact-items animate">
+            <div class="div-1">
+                <h1>Contact</h1>
+                <span title="close menu" onclick="document.getElementById('mol2').style.display='none'">X</span>
+            </div>
+            <p class="par1">Reserve a table, ask for today's special or just send us a message:</p>
+            <form action="" method="post">
+                <div>
+                    <input type="text" title="please fill out this form" placeholder="name" required="name">
+                </div>
+                <div>
+                    <input type="number" placeholder="how many people" title="please fill out this form"
+                        required="people">
+                </div>
+                <div>
+                    <input type="datetime-local" value="2020-11-16T20:00" style="font-size: 18px;" required="date">
+                </div>
+                <div>
+                    <input type="text" title="please fill out this form" placeholder="message/ special requirements"
+                        required="message">
+                </div>
+                <button type="submit">send message</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script>
+        var modal = document.getElementById('mol');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        var modal2 = document.getElementById('mol2');
+        window.onclick = function (event2) {
+            if (event2.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
